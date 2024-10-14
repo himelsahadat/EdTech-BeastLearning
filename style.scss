@@ -1,0 +1,254 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+}
+
+.header {
+  &__container {
+    padding: 2rem 14%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+  }
+
+  &__logo {
+    img {
+      max-width: 100%;
+      height: 93.77px;
+    }
+  }
+
+  &__nav-item {
+    display: inline-block;
+    padding: 10px 20px;
+  }
+  &__nav-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  &__link {
+    text-decoration: none;
+    padding: 7px 22px;
+    font-weight: 500;
+    &--log_in {
+      background-color: #54b8ff;
+      color: white;
+    }
+  }
+
+  &__icon {
+    font-size: 30px;
+    align-items: center;
+  }
+  &__icon {
+    display: none;
+  }
+}
+
+.home {
+  background: url(img/bg-img.png);
+height: 200vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  margin: 0 auto;
+  position: relative;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    padding: 4rem 15%;
+    position: relative;
+  }
+  &__sub-title {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+  &__title {
+    font-size: 65px;
+    font-weight: 700;
+    color: #5f596e;
+  }
+  &__para {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+    margin-top: 20px;
+  }
+  &__button {
+    padding: 10px 30px;
+    background-color: #54b8ff;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 40px;
+
+    &--link {
+      font-size: 18px;
+      font-weight: 400;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-decoration: none;
+      gap: 16px;
+
+      i {
+        font-size: 25px;
+      }
+    }
+  }
+
+  .home__ornament {
+    &_g1 {
+      bottom: 5%;
+      right: 28%;
+      position: absolute;
+    }
+    &_g2 {
+      bottom: 16%;
+      right: 28%;
+      position: absolute;
+    }
+
+    &_g3 {
+      bottom: 5%;
+      right: 40%;
+      position: absolute;
+    }
+    &_g4 {
+      bottom: 16%;
+      right: 40%;
+      position: absolute;
+    }
+    &_g5 {
+      bottom: 27%;
+      right: 28%;
+      position: absolute;
+    }
+  }
+  &__ornament-1 {
+    top: 24%;
+    right: 0;
+    position: absolute;
+  }
+  &__ornament-2 {
+    top: 10%;
+    left: 0;
+    position: absolute;
+  }
+  &__ornament-3 {
+    top: 80%;
+    left: 0;
+    position: absolute;
+  }
+  &__ornament-4 {
+    top: 60%;
+    right: 0;
+    position: absolute;
+  }
+}
+
+.about {
+    position: absolute;
+    top: 115%;
+  &__container {
+    padding: 2rem 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 90px;
+  }
+  &__card-2 {
+    position: relative;
+    background-color: #f7f7f7;
+    bottom: 40px;
+    width: 344px;
+    height: 530px;
+    border-radius: 20px;
+    box-shadow: 0px 11px 19px #b1acac;
+    &_1 {
+     
+      padding: 2rem;
+      height: 500px;
+      background-color: white;
+      border-radius: 20px;
+      width: 100%;
+      img {
+        width: 100%;
+        border-radius: 20px;
+      }
+    }
+    &--sub_title {
+      color: #ff733b;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    &--title {
+      font-size: 26px;
+      font-weight: 600;
+    }
+    &--para {
+      color: #898e92;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}
+
+/*Responsive Design*/
+/*Responsive Design*/
+
+@media (max-width: 576px) {
+  .header {
+    &__menu {
+      display: none;
+    }
+    &__link {
+      display: none;
+    }
+    &__icon {
+      display: block;
+      position: relative;
+      top: 20px;
+    }
+  }
+
+  .home {
+    &__container {
+      flex-direction: column;
+      text-align: center;
+      gap: 30px;
+    }
+    &__sub-title {
+      font-size: 15px;
+      margin-top: 10px;
+    }
+    &__title {
+      font-size: 50px;
+      line-height: 70px;
+    }
+    &__para {
+      font-size: 15px;
+    }
+    &__img {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    &__ornament {
+      display: none;
+    }
+  }
+}
