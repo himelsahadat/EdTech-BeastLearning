@@ -438,11 +438,9 @@
 /*Mobile Design Section Start*/
 
 @media (max-width: 576px) {
-  
   .header {
-
     &__menu {
-    display: none;
+      display: none;
       // flex-direction: column;
       // position: relative;
       //  width: 100%;
@@ -452,7 +450,6 @@
       // text-align: right;
       // left: 60px;
       // background-color: red;
-     
     }
     &__link {
       display: none;
@@ -462,44 +459,42 @@
       position: relative;
       top: 20px;
       cursor: pointer;
-   
     }
-     
-    &-active{
-      display: none;
-    
-    &__menu--bar {
-      
-      display: block;
-      background-color: red;
-      border-radius: 20%;
-      height: 100%;
-      position: relative;
-      left: 45%;
-      bottom: 20px;
-      width: 40%;
-      transition: 0.8s;
-        text-align: center;
-      li:nth-child(odd) {
-        background-color: rgb(29, 27, 27);
-      }
-      li:nth-child(even) {
-        background-color: rgb(37, 37, 37);
-      }
-      li {
-        list-style: none;
-        padding: 5px 10px;
-        border-bottom: 1px solid white;
 
-        a {
-          text-decoration: none;
-          color: white;
-          font-size: 16px;
-          width: 500;
+    &-active {
+      display: none;
+
+      &__menu--bar {
+        display: block;
+        background-color: red;
+        border-radius: 20%;
+        height: 100%;
+        position: relative;
+        left: 45%;
+        bottom: 20px;
+        width: 40%;
+        transition: 0.8s;
+        text-align: center;
+        li:nth-child(odd) {
+          background-color: rgb(29, 27, 27);
+        }
+        li:nth-child(even) {
+          background-color: rgb(37, 37, 37);
+        }
+        li {
+          list-style: none;
+          padding: 5px 10px;
+          border-bottom: 1px solid white;
+
+          a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            width: 500;
+          }
         }
       }
     }
-  }
   }
 
   .home {
