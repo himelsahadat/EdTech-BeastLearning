@@ -49,7 +49,8 @@
     align-items: center;
     display: none;
   }
-  &__menu--bar {
+
+  &-active {
     display: none;
   }
 }
@@ -463,11 +464,12 @@
       cursor: pointer;
    
     }
-
+     
+    &-active{
+      display: none;
+    
     &__menu--bar {
-      &-ti{
-        display: none;
-      }
+      
       display: block;
       background-color: red;
       border-radius: 20%;
@@ -476,8 +478,8 @@
       left: 45%;
       bottom: 20px;
       width: 40%;
-transition: 0.8s;
-      text-align: center;
+      transition: 0.8s;
+        text-align: center;
       li:nth-child(odd) {
         background-color: rgb(29, 27, 27);
       }
@@ -497,6 +499,7 @@ transition: 0.8s;
         }
       }
     }
+  }
   }
 
   .home {

@@ -42,7 +42,7 @@
   align-items: center;
   display: none;
 }
-.header__menu--bar {
+.header-active {
   display: none;
 }
 
@@ -403,7 +403,10 @@
     top: 20px;
     cursor: pointer;
   }
-  .header__menu--bar {
+  .header-active {
+    display: none;
+  }
+  .header-active__menu--bar {
     display: block;
     background-color: red;
     border-radius: 20%;
@@ -415,21 +418,18 @@
     transition: 0.8s;
     text-align: center;
   }
-  .header__menu--bar-ti {
-    display: none;
-  }
-  .header__menu--bar li:nth-child(odd) {
+  .header-active__menu--bar li:nth-child(odd) {
     background-color: rgb(29, 27, 27);
   }
-  .header__menu--bar li:nth-child(even) {
+  .header-active__menu--bar li:nth-child(even) {
     background-color: rgb(37, 37, 37);
   }
-  .header__menu--bar li {
+  .header-active__menu--bar li {
     list-style: none;
     padding: 5px 10px;
     border-bottom: 1px solid white;
   }
-  .header__menu--bar li a {
+  .header-active__menu--bar li a {
     text-decoration: none;
     color: white;
     font-size: 16px;
